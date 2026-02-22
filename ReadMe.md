@@ -1,5 +1,6 @@
 Flexible Notification System (Maintenance & Evolution)
 
+
 Author: Andrew Q. Yarber 
 
 
@@ -7,7 +8,6 @@ Date: February 2026
 
 📝 Project Purpose
 This project implements a modular notification system designed for high maintainability. It provides a framework for sending alerts across multiple communication channels—Email, SMS, and WhatsApp—while ensuring the core logic remains protected from modification during feature expansion.
-+1
 
 🚀 Quick Start (CLI Execution)
 This program is designed to be compiled and run strictly via the Command Line Interface (CLI).
@@ -16,17 +16,26 @@ This program is designed to be compiled and run strictly via the Command Line In
 Navigate to the project root and run:
 
 Bash
+
 javac -d bin src/app/*.java src/services/*.java
+
+
 2. Execution
 Run the application using the main operation class:
 
 Bash
+
 java -cp bin app.AlertSystemOperation
+
+
 3. Run Unit Tests
 To verify the WhatsApp integration and confirm maintenance tasks are successful:
 
 Bash
+
 java -cp bin app.TestWhatsApp
+
+
 🏗 Architectural Overview
 The system is built using professional standards to ensure a seamless handover to other developers:
 
@@ -44,7 +53,7 @@ Session Logging: The system utilizes a java.util.ArrayList<String> to track ever
 
 🛠 Maintenance: Adding New Services
 The system is designed for evolution rather than rewriting. To add a new service (e.g., Slack or Push Notifications):
-+1
+
 
 
 Create a new class in the services package.
@@ -66,6 +75,9 @@ JavaDocs: All files include professional-grade JavaDocs with @param, @author, an
 Generate Documentation: To generate the professional HTML manual in a dedicated folder, run:
 
 Bash
+
 javadoc -d docfolder -sourcepath src -subpackages app:services
+
+
 ⚖️ Licensing
 This project is provided for academic purposes under the standards of CSC6301 Module 5.
